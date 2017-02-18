@@ -1,0 +1,23 @@
+{
+  "name": "@steuerbot/types",
+  "version": "0.0.1",
+  "homepage": "https://github.com/steuerbot/types-node-xmpp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:steuerbot/types-node-xmpp.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steuerbot/types-node-xmpp/issues"
+  },
+  "engines": {
+    "node": ">= 6.9.1"
+  },
+  "scripts": {
+    "compile-scripts": "tsc -p scripts",
+    "new-package": "dts-gen --dt",
+    "not-needed": "node scripts/not-needed.js",
+    "lint": "node scripts/lint.js",
+    "test": "node node_modules/types-publisher/bin/tester/test.js --run-from-definitely-typed --nProcesses 1"
+  }
+}
