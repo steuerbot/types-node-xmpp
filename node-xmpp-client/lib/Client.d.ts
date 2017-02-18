@@ -43,10 +43,16 @@ interface Options {
     actAs?: string; // if admin user act on behalf of another user (just user)
     disallowTLS?: boolean; // prevent upgrading the connection to a secure one via TLS
     preferred?: string; // Preferred SASL mechanism to use
+    websocket?: Websocket; // Absolutely necessary if using in a browser!!
     bosh?: Bosh;
 }
 
 interface Bosh {
+    url?: string;
+    prebind?: (error: any, data: any) => void;
+}
+
+interface Websocket {
     url?: string;
     prebind?: (error: any, data: any) => void;
 }
