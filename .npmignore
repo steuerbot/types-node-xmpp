@@ -1,2 +1,4 @@
 *.md
 *.json
+.idea
+README.md
