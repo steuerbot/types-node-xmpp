@@ -4,4 +4,4 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 
-export {Component} from './lib/Component';
+export {Component, Options} from './lib/Component';

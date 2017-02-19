@@ -30,7 +30,7 @@ export declare class Client extends Session {
     registerSaslMechanism(method: any): void;
 }
 
-interface Options {
+export declare interface Options {
     jid: string;
     password: string;
     host?: string;

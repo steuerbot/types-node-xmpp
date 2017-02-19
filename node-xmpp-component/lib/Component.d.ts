@@ -13,7 +13,7 @@ export declare class Component extends EventEmitter {
     end(): void;
 }
 
-interface Options {
+export declare interface Options {
     jid: string;
     password: string;
     host: string;

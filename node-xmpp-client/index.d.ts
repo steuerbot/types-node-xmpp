@@ -8,6 +8,6 @@ import * as SASL from './lib/sasl';
 import {Client} from 'node-xmpp-client/lib/Client';
 
 export * from './lib/Client';
-export {Client} from './lib/Client';
+export {Client, Options} from './lib/Client';
 export {SASL};
 
