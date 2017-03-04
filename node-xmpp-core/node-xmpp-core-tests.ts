@@ -1,5 +1,6 @@
 import {Connection} from './index';
 
-let con = new Connection();
+const con = new Connection();
 con.on('online', () => {
+    con.eventNames();
 });
